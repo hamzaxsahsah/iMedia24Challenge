@@ -14,9 +14,8 @@ import javax.persistence.Table
 @Table(name = "products")
 data class ProductEntity(
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment
     @Column(name = "sku", nullable = false)
-    val sku: String,
+    val sku: String, 
     
     @Column(name = "name", nullable = false)
     val name: String,
